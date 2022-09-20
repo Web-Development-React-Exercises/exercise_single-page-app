@@ -1,15 +1,18 @@
 import './App.css';
+import Home from './pages/Home';
+import About from './pages/About';
+import Among from './pages/Among';
+import Us from './pages/Us';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-      <p class="muted">Test</p>
-      <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Dropdown item</a></li>
-    <li><a class="dropdown-item" href="#">Dropdown item</a></li>
-    <li><a class="dropdown-item" href="#">Dropdown item</a></li>
-  </ul>
-  </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/among" element={<Among />} />
+      <Route path="/us" element={<Us />} />
+    </Routes>
   );
 }
 
