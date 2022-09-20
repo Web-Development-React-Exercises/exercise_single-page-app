@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Among from './pages/Among';
 import Us from './pages/Us';
+import NotFound from './pages/NotFound';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/among" element={<Among />} />
       <Route path="/us" element={<Us />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
