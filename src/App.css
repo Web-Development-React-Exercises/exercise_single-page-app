@@ -1,6 +1,13 @@
 a:link { text-decoration: none; }
 a:hover {text-decoration: underline; }
 
+body { 
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .logo {
   width: auto;
   height: auto;
@@ -11,8 +18,27 @@ a:hover {text-decoration: underline; }
   height: 45px;
 }
 
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 50%;
+  height: 50%;
+}
+
 footer {
   position: fixed;
+  background-color: white;
   bottom: 0;
   width: 100vw;
 }
